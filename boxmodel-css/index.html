@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      div#boxModel {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      div#boxModel div {
+        width: 80px;
+        height: 80px;
+        background-color: green;
+        /* width,height은 Content 영역을 결정한다. */
+        padding: 15px;
+        /* padding은 테두리와 Content 사이의 안쪽 여백.*/
+        border: 5px solid #333;
+        /* 테두리 */
+        margin: 15px;
+        /* 테두리 겉의 바깥 영역 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="boxModel">
+      <div>컨텐츠 영역</div>
+    </div>
+  </body>
+</html>

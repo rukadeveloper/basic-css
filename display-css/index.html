@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Display</title>
+  </head>
+  <style>
+    body {
+      font-family: "Noto Sans KR";
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #333;
+    }
+
+    .box1 {
+      margin-bottom: 30px;
+    }
+
+    .box h2 {
+      text-align: center;
+    }
+
+    .box1 div {
+      width: 40px;
+      height: 40px;
+      background-color: red;
+      margin-bottom: 15px;
+      /* width,height 속성이 들어간다. */
+      /* 가로 영역 모두를 차지해서 수직배치가 된다. */
+    }
+
+    .box2 span {
+      /* display: inline => default는 inline 속성을 가진다. */
+      display: inline-block; /* inline은 크기를 안 가지므로 inline-block 혹은 block으로 바꿔줘야 */
+      /* inline-block은 inline 성질을 가져서 수평배치를 한다. */
+      width: 40px;
+      height: 40px;
+      background-color: blue;
+      margin-bottom: 15px;
+    }
+  </style>
+  <body>
+    <!-- div 속성에 대해 알아보기 -->
+    <div class="box box1">
+      <h2>Block Box</h2>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- span 속성에 대해 알아보기 -->
+    <div class="box box2">
+      <h2>Inline Box</h2>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </body>
+</html>
